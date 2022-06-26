@@ -1,0 +1,79 @@
+.login-card {
+    max-width: 450px;
+    height: 260px;
+    margin: auto;
+}
+
+#login-form {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 991px) {
+        padding: 25px 40px;
+    }
+}
+
+.submit-button-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+        flex-direction: column-reverse;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        flex-basis: 1px;
+        color: $gray-500;
+        padding: 0px;
+
+        #remember-me-checkbox {
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            margin: 0px;
+
+            &::before {
+                content: "";
+                display: flex;
+                width: 22px;
+                height: 22px;
+                border: 2px solid #cecece;
+                border-radius: 3px;
+            }
+
+            &:checked::before {
+                align-items: center;
+                justify-content: center;
+                content: "\f00c";   // A checkmark
+                font-family: "Font Awesome 6 Free";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 900;
+                color: #888888;
+                border-color: #888888;
+            }
+        }
+
+        .form-check-label {
+            margin-left: 0.5rem;
+            user-select: none;
+        }
+    }
+
+    .btn {
+        flex-grow: 1;
+        flex-basis: 1px;
+        background-color: $black;
+
+        @media (max-width: 991px) {
+            margin-bottom: 10px;
+        }
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+footer {
+    background-color: $white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+    .container {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .row {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .column {
+        text-align: center;
+
+        i {
+            color: $primary-color;
+        }
+
+        p,a {
+            color: $dark;
+        }
+
+        &:first-child {
+            text-align: start;
+        }
+
+        &:last-child {
+            text-align: end;
+        }
+
+        @media (max-width:991px) {
+            &:first-child {
+                text-align: center; 
+            }
+
+            &:last-child {
+                text-align: center; 
+            }
+        }
+    }
+
+    p {
+        margin: 15px 0px;
+    }
+}

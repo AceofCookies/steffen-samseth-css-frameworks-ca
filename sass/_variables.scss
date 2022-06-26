@@ -1,0 +1,26 @@
+
+
+// Colors
+$primary-color: #8DBDE7;
+$secondary-color: #81CFC2;
+$tertiary-color: #EFEF94;
+$background-color: $primary-color;
+$text-color: black;
+
+// Bootstrap overrides
+$font-family-base: "Open Sans", sans-serif;
+$headings-font-family: "Gentium Book Basic", serif;
+$headings-color: white;
+
+$body-bg: $background-color;
+$body-color: $text-color;
+
+$navbar-light-color: black;
+$navbar-light-active-color: $secondary-color;
+$navbar-light-brand-color: black;
+
+$card-cap-bg: $secondary-color;
+$card-height: 255px;
+$card-border-width: 0px;
+$card-border-radius: 6px;
+
